@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Week 9</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <h2>Login</h2>
+    <form>
+        <input type="text" id="username" /> <br /> <br />
+        <input type="text" id="password" />
+        <button type="button" onclick="login()">Submit</button>
+    </form>
+
+    <h2>Register</h2>
+    <form>
+        <input type="text" id="newUsername" /> <br /> <br />
+        <input type="text" id="newPassword" />
+        <button type="button" onclick="register()">Submit</button>
+    </form>
+
+    <form id="sort">
+        <h2>How would you like to search for hotels?</h2>
+        <input type="radio" name="hotels" id="string" value="name"/>Alphabetical <br />
+        <input type="radio" name="hotels" id="1" value="rooms"/>Room's Available <br />
+        <input type="radio" name="hotels" id="2" value="booked"/>Room's Booked <br />
+        <input type="radio" name="hotels" id="3" value="price"/>Price per Night <br />
+        <input type="radio" name="hotels" id="4" value="rating"/>Rating <br />
+        <!-- <button type="submit" onclick="omegaHotelSort()">Submit</button> -->
+        <button type="submit">Submit</button>
+    </form>
+
+    <div id="hotel-list"></div>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
